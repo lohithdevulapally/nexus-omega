@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #060a12;
+    --surface-1: #0b1220;
+    --surface-2: #111a2e;
+    --surface-3: #16223b;
+    --border-subtle: #1e2b45;
+    --border-accent: #2c3e64;
+    --foreground: #f1f5f9;
+    --muted: #94a3b8;
+    --cyan-accent: #06b6d4;
+    --emerald-accent: #10b981;
+    --amber-accent: #f59e0b;
+    --rose-accent: #f43f5e;
+    --purple-accent: #8b5cf6;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2b45;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3e64;
+}
+
+/* Glass & Mission Control Utilities */
+.glass-panel {
+  background-color: rgba(11, 18, 32, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 43, 69, 0.7);
+}
+
+.glass-panel-elevated {
+  background-color: rgba(17, 26, 46, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(44, 62, 100, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tech-glow-cyan {
+  box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.15);
+}
+
+.tech-glow-rose {
+  box-shadow: 0 0 20px -5px rgba(244, 63, 94, 0.15);
+}
+
+.tech-glow-emerald {
+  box-shadow: 0 0 20px -5px rgba(16, 185, 129, 0.15);
+}
+
+/* React Flow Dark Styling */
+.react-flow__background {
+  background-color: #060a12 !important;
+}
+
+.react-flow__controls button {
+  background-color: #111a2e !important;
+  color: #f1f5f9 !important;
+  border-bottom: 1px solid #1e2b45 !important;
+}
+
+.react-flow__controls button:hover {
+  background-color: #16223b !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
